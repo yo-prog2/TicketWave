@@ -66,6 +66,11 @@ const CategoriesPage = () => {
 
         </div>
       </div>
+      <footer className="w-full py-4 mt-auto" style={{ backgroundColor: colors.background }}>
+        <div className="w-full max-w-7xl mx-auto flex justify-center items-center">
+          <p className="text-white text-sm">&copy; 2025 Ticket Wave. All Rights Reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 };

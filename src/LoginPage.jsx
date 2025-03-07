@@ -3,7 +3,7 @@ import LOGO from './assets/logo.png';
 
 const colors = {
   primary: "#060606",
-  background: "#083135",
+  background: "#083135", // This is the background color
   disbaled: "#D9D9D9",
   button: "#3C64B1"
 };
@@ -65,10 +65,17 @@ const LoginPage = () => {
 
         {/* Right Side Image */}
         <div className="hidden md:flex w-2/3 h-full items-center justify-start pl-10">
-  <img src={COVER_IMAGE} alt="Cover" className="w-70 h-auto object-cover rounded-lg shadow-md" />
-</div>
+          <img src={COVER_IMAGE} alt="Cover" className="w-70 h-auto object-cover rounded-lg shadow-md" />
+        </div>
 
       </div>
+
+      {/* Footer inside the main container with same background color */}
+      <footer className="w-full py-4 mt-auto" style={{ backgroundColor: colors.background }}>
+        <div className="w-full max-w-7xl mx-auto flex justify-center items-center">
+          <p className="text-white text-sm">&copy; 2025 Ticket Wave. All Rights Reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 };
